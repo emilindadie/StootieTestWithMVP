@@ -120,13 +120,11 @@ public class StootActivityDetails extends AppCompatActivity implements DetailsVi
     @Override
     public void updateUrlImageStoot(String urlImageStoot) {
 
-        if(!urlImageStoot.isEmpty()){
-            Glide.with(this)
-                    .load(urlImageStoot)
-                    .override(100, 100)
-                    .placeholder(R.drawable.anonyme)
-                    .into(profilImage);
-        }
+        Glide.with(this)
+            .load(urlImageStoot)
+            .override(100, 100)
+            .placeholder(R.drawable.anonyme)
+            .into(profilImage);
     }
 
     @Override
