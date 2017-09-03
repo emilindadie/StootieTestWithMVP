@@ -1,4 +1,4 @@
-package com.example.emili.stootietestwithmvp.View;
+package com.example.emili.stootietestwithmvp.view;
 
 /**
  * Created by emili on 03/09/2017.

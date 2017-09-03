@@ -1,4 +1,4 @@
-package com.example.emili.stootietestwithmvp.View;
+package com.example.emili.stootietestwithmvp.view;
 
 import com.example.emili.stootietestwithmvp.donnee.Stoot;
 
