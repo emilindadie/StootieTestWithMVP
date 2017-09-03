@@ -2,10 +2,8 @@ package com.example.emili.stootietestwithmvp;
 
 import android.content.Context;
 
-import com.example.emili.stootietestwithmvp.View.DetailsView;
-import com.example.emili.stootietestwithmvp.View.MainView;
+import com.example.emili.stootietestwithmvp.view.DetailsView;
 import com.example.emili.stootietestwithmvp.presenter.DetailsPresenter;
-import com.example.emili.stootietestwithmvp.presenter.MainPresenter;
 
 import org.junit.Before;
 import org.junit.Test;
@@ -47,6 +45,8 @@ public class DetailsPresenterTest {
         String stootDuration = " il ya 4 jours";
         int stootBudget = 50;
         String stootKindOfService  = "mission";
+        String urlImageStoot  = "lien";
+
 
         assertFalse(stootUserFirstname.isEmpty());
         assertFalse(stootUserLastname.isEmpty());
@@ -56,6 +56,8 @@ public class DetailsPresenterTest {
         assertFalse(stootDuration.isEmpty());
         assertNotNull(stootBudget);
         assertFalse(stootKindOfService.isEmpty());
+        assertFalse(urlImageStoot.isEmpty());
+
     }
 
 }

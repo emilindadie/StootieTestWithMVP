@@ -8,10 +8,9 @@ import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.view.Menu;
 import android.view.MenuItem;
-import android.widget.ProgressBar;
 import android.widget.Toast;
 
-import com.example.emili.stootietestwithmvp.View.MainView;
+import com.example.emili.stootietestwithmvp.view.MainView;
 import com.example.emili.stootietestwithmvp.donnee.Stoot;
 import com.example.emili.stootietestwithmvp.donnee.StootAdapter;
 import com.example.emili.stootietestwithmvp.presenter.MainPresenter;

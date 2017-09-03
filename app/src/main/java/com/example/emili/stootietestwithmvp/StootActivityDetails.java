@@ -7,7 +7,8 @@ import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import com.example.emili.stootietestwithmvp.View.DetailsView;
+import com.bumptech.glide.Glide;
+import com.example.emili.stootietestwithmvp.view.DetailsView;
 import com.example.emili.stootietestwithmvp.presenter.DetailsPresenter;
 import com.google.android.gms.maps.CameraUpdateFactory;
 import com.google.android.gms.maps.GoogleMap;
@@ -36,7 +37,7 @@ public class StootActivityDetails extends AppCompatActivity implements DetailsVi
         SupportMapFragment mapFragment = (SupportMapFragment) getSupportFragmentManager()
                 .findFragmentById(R.id.map);
         mapFragment.getMapAsync(this);
-        
+
         Intent intent = getIntent();
         id = intent.getLongExtra("id", 0);
 
@@ -113,6 +114,19 @@ public class StootActivityDetails extends AppCompatActivity implements DetailsVi
     @Override
     public void updateBudget(int bugdet) {
         stootBugget.setText(String.valueOf(bugdet) + " euro");
+    }
+
+
+    @Override
+    public void updateUrlImageStoot(String urlImageStoot) {
+
+        if(!urlImageStoot.isEmpty()){
+            Glide.with(this)
+                    .load(urlImageStoot)
+                    .override(100, 100)
+                    .placeholder(R.drawable.anonyme)
+                    .into(profilImage);
+        }
     }
 
     @Override

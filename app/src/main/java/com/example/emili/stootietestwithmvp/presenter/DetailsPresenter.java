@@ -2,7 +2,7 @@ package com.example.emili.stootietestwithmvp.presenter;
 
 import android.content.Context;
 
-import com.example.emili.stootietestwithmvp.View.DetailsView;
+import com.example.emili.stootietestwithmvp.view.DetailsView;
 import com.example.emili.stootietestwithmvp.model.RequestDetailsStoot;
 
 /**
@@ -23,6 +23,8 @@ public class DetailsPresenter {
     private String stootDuration ="";
     private int stootBudget = 0;
     private String stootKindOfService  = "";
+    private String urlImageStoot = "";
+
 
 
     public DetailsPresenter(Context context, DetailsView detailsView){
@@ -42,8 +44,9 @@ public class DetailsPresenter {
         stootDuration = requestDetailsStoot.getDuration();
         stootBudget = requestDetailsStoot.getBudget();
         stootKindOfService = requestDetailsStoot.getKindOfService();
-    }
+        urlImageStoot = requestDetailsStoot.getUrlImageStoot();
 
+    }
 
     public void updateDetailsStoot(){
         detailsView.updateFistName(stootUserFirstname);
@@ -54,5 +57,6 @@ public class DetailsPresenter {
         detailsView.updateDate(stootDuration);
         detailsView.updateBudget(stootBudget);
         detailsView.updateKindOfservice(stootKindOfService);
+        detailsView.updateUrlImageStoot(urlImageStoot);
     }
 }

@@ -2,7 +2,7 @@ package com.example.emili.stootietestwithmvp;
 
 import android.content.Context;
 
-import com.example.emili.stootietestwithmvp.View.MainView;
+import com.example.emili.stootietestwithmvp.view.MainView;
 import com.example.emili.stootietestwithmvp.donnee.Stoot;
 import com.example.emili.stootietestwithmvp.presenter.MainPresenter;
 

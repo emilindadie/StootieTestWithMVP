@@ -42,6 +42,7 @@ public class RequestDetailsStoot {
     private static int budget = 0;
     private static String address = "";
     private static String duration = "";
+    private static String urlImageStoot= "";
 
 
     public RequestDetailsStoot(Context context){
@@ -115,7 +116,7 @@ public class RequestDetailsStoot {
 
 
             if(user.has("profile_picture_url") && user.getString("profile_picture_url") != null) {
-                String urlImagestoot = user.getString("profile_picture_url");
+                urlImageStoot = user.getString("profile_picture_url");
             }
 
             JSONObject answer_wizard = stootDetails.getJSONObject("answer_wizard");
@@ -220,5 +221,9 @@ public class RequestDetailsStoot {
         return duration;
     }
 
+
+    public String getUrlImageStoot(){
+        return urlImageStoot;
+    }
 }
 

@@ -14,4 +14,5 @@ public interface DetailsView{
     void updateDate(String date);
     void updateKindOfservice(String kindOfService);
     void updateBudget(int bugdet);
+    void updateUrlImageStoot(String urlImageStoot);
 }
